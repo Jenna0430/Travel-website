@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelling</title>
+  <style>
+
+h1{
+        font-family: Didot,Didot-fallback,Georgia,Times,serif;
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        line-height: 1.6;
+      }
+      .landing-pic{
+        height: 100vh;
+        max-width: 100%;
+        overflow: hidden;
+        z-index: -1;
+        width: 100%;
+        position: sticky;
+      }
+      header{
+        width: 100%;
+        max-width: 100vw;
+        display: grid;
+        position: relative;
+        z-index: auto;
+        left: 0px;
+        top: 0px;
+      }
+      header img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0rem;
+      }
+      .header1{
+        position: relative;
+        top: -100vh;
+        height: 200vh;
+        width: 100%;
+        background-color:linear-gradient(rgba(255,255,255,0) 50%, #ffffff);
+        background-image: linear-gradient(rgba(255,255,255,0) 50%, rgb(255,255,255));
+      }
+      .header2{
+        background-color: #fff;
+        position: relative;
+        color: #000;
+        z-index: -1;
+        top:-100vh;
+        padding:70px;
+        text-align: center;
+      }
+      .section p{
+        font-family: serif;
+        font-size: 1.17rem;
+        line-height: 1.6;
+        display: block;
+
+      }
+      .section, footer{
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        font-family: Charter,Georgia,Times,Serif;
+          font-size: 1.19rem;
+          line-height: 1.6;
+      }
+      hr{
+        border: 2px solid black;
+      }
+      .section1-1 img{
+        max-width: 700px;
+        height: 700px;
+        object-fit: contain;
+      }
+      .section1-1,.section2-1{
+          column-count: 2;
+          padding: 5%;
+      }
+      .visit-image{
+        padding-left: 0;
+        padding-top: 18%;
+        padding-bottom: 30%;
+        padding-right: 30%;
+        font-family: Charter,Georgia,Times,Serif;
+          font-size: 1.19rem;
+          line-height: 1.6;
+      }
+      .culture-image{
+        padding-left: 0;
+        padding-top: 10%;
+        padding-bottom: 30%;
+        padding-right: 30%;
+        font-family: Charter,Georgia,Times,Serif;
+          font-size: 1.19rem;
+          line-height: 1.6;
+      }
+
+      .section-2 img{
+        max-width: 500px;
+        height: 700px;
+        object-fit: cover;
+      }
+
+      span{
+          font-family: HarmoniaSans,Helvetica,Arial,Sans-serif;
+          font-weight: normal;
+          font-size: 2rem;
+      }
+      .section2-1 span {
+        font-family: HarmoniaSans,Helvetica,Arial,Sans-serif;
+        font-weight: normal;
+        font-size: 1.5rem;
+      }
+      button{
+        color: white;
+        background-color: #1a64d6;
+        border-radius: 50px;
+        padding: 15px;
+        box-shadow:  3px 3px 3px  rgba(0,0,0,0.2);
+        border: 0;
+        margin: 15px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover{
+        background-color: rgb(149, 39, 39);
+        cursor: url(hand.cur), pointer;
+      } 
+      footer p{
+        font-family: HarmoniaSans,Helvetica,Arial,Sans-serif;
+        line-height: 1rem;
+      }
+      .click{
+        font-size: 0.9rem;
+      }
+      footer div{
+        padding: 2%;
+      }
+      .author{
+        opacity: 0.6;
+      }
+      .visit-image .spec{
+            padding-bottom: 0;
+      }
+ 
+      @media ( min-width: 768px ) and (max-width: 1100px){
+        .section1-1,.section2-1{
+          column-count: 1;
+      }
+      .visit-image, .culture-image{
+        padding: 3%;
+      }
+      .section1-1 img{
+      
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        display: block;
+        margin-left:  auto;
+        margin-right: auto;
+      }
+      .section-2 img{
+        max-width: 100%;
+        height: 700px;
+        object-fit: contain;
+      }
+      }
+
+      @media (min-width:0) and (max-width: 770px){
+        .section1-1,.section2-1{
+          column-count: 1;
+      }
+      .visit-image, .culture-image{
+        padding: 0;
+      }
+      .section1-1 img{
+      
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        display: block;
+        margin-left:  0;
+        margin-right: 0;
+      }
+      .section-2 img{
+        max-width: 100%;
+        height: 400px;
+        object-fit: contain;
+      }
+      }
+
+      @media (min-width: 48rem){
+      .section{
+        margin: 0 auto;
+        padding: 0rem;
+      }
+      }
+      @media (max-width: 64rem){
+        .section{
+          width: auto
+        }
+        }
+  </style>
+</head>
+<body>
+    <header>
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/508/original/landingpic2.jpg?1690627470" alt="" class="landing-pic">
+          <div class="header1">
+          </div>
+          <div class="header2">
+          <h1> Travelling! Places to visit and Cultures to experience</h1>
+        </div>
+    </header>
+
+      <div class="section">
+          <p>There are so many amazing places around the globe to see, we couldn't possibly include them all in just one list. But, these breathtaking destinations are definitely worth bumping to the top of your travel bucket list whether you're looking to relax on a beach, get off the grid or explore a new international city—these are the most breathtaking locations to consider.
+          <a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">harpersbazaar</a></p>
+          <hr>
+    </div>
+
+      <div class="section-1">
+          <div class="section1-1">
+            <div class="sec-img">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/503/original/BanffnationalPark-canada.jpg?1690627321" alt="BanffnationalPark-canada">
+            </div>
+            <div class="visit-image">
+              <p><span>Banff National Park, Canada</span></p>
+              <p>  The glacial lakes in Canada's first national park have some of the bluest water you've ever seen. Even if you're not particularly outdoorsy, you can still admire the views from one of the cozy and luxurious lakeside lodges throughout the park, like the Fairmont Chateau Lake Louise.</p>
+              <a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">harpersbazaar</a>
+              </div>
+            
+        </div>
+  
+        <div class="section1-1">
+              <div class="sec-img">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/504/original/forbiddencity-beijing.jpg?1690627353" alt="forbiddencity-beijing">
+              </div>
+              <div class="visit-image">
+                <p><span>Forbidden City, Beijing, China</span></p>
+              <p>Located in the center of Beijing, the Forbidden City was the imperial palace of China's emperors for five centuries and is one of the most beautifully preserved examples of ancient Chinese architecture.</p>
+              <a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">harpersbazaar</a>
+          </div> 
+    </div>
+  
+        <div class="section1-1">
+              <div class="sec-img">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/510/original/santorini-greece.jpg?1690627536" alt="santorini-greece">
+              </div>
+              <div class="visit-image">
+                <p><span>Oia, Santorini, Greece</span></p>
+            <p>All of the Greek islands are undeniably beautiful, but head to the hillside town of Oia for some of the best views of the bright blue Aegean Sea.</p>
+            <a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">harpersbazaar</a>
+              </div>
+        </div>
+  
+        <div class="section1-1">
+              <div class="sec-img">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/511/original/venice-italy.jpg?1690627571" alt="venice-italy">
+              </div>
+              <div class="visit-image">
+                <p><span>Venice, Italy</span></p>
+              <p>
+                If traversing the canals with a be-striped gondolier sounds unbearably touristy, stick to the sidewalks and spectacular arched bridges to get your fill of this truly unique, wildly romantic floating city.</p>
+                <a href="https://www.harpersbazaar.com/culture/travel-dining/g7171/most-beautiful-places-in-the-world/">harpersbazaar</a>
+              </div>
+        </div>
+  
+  </div>
+
+        <div class="section">
+          <p>
+            One of the best parts of traveling is getting to discover new cultures and ways of living. Traveling and experiencing different cultures can promote personal growth and open new possibilities that wouldn't have otherwise existed. We have rounded up the most memorable and unique cultural experiences we've had on our world travels and hope they will inspire your next trip
+            <a href="https://www.groovymashedpotatoes.com/unique-cultural-experiences/">groovymashedpotatoes.com</a>
+          </p>
+          <hr>
+        </div>
+
+
+      <div class="section-2">
+
+        <div class="section2-1">
+          <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/505/original/Japan.jpg?1690627376" alt="Japan">
+          </div>
+          <div class="culture-image">
+            <span>Stay at a ryokan and soak in an onsen, a volcanic hot spring bath</span>
+            <p>A ryokan is a traditional Japanese inn featuring onsens with hot, mineral rich waters and traditional rooms with tatami mats. The first ryokan opened in 718 AD and has been a central part of Japanese culture ever since.
+              Ryokans allow guests to relax in a homey and comfortable setting. Meals are served to you in your room Kaiseki style (multi-course Japanese dishes) while you wear traditional Yukata robes. Before or after your meal you can soak in the public onsens or book a private session. Public onsens are separated by gender since it's a nude experience. Some ryokans also feature private onsens in your room if you're up for the splurge.
+            <a href="https://www.groovymashedpotatoes.com/unique-cultural-experiences/">groovymashedpotatoes.com</a></p>
+          </div> 
+        </div>
+  
+        <div class="section2-1">
+          <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/506/original/Japan2.jpg?1690627410" alt="Osaka-Japan">
+          </div>
+          <div class="culture-image">
+            <span>Sing karaoke in Osaka</span>
+            <p>Did you know that the first karaoke machine was invented in Japan in 1971? Karaoke parties are very popular in Japan, with more than 100,000 karaoke boxes and bars in the country. A karaoke box is a place where you can rent a private room with karaoke equipment and belt out songs with your friends.
+
+              Our favourite karaoke bar we went to was Moonshine, a small alternative bar in Osaka (make sure to eat a hotdog there). Osaka's vibrant and zany appeal makes it a fun city to let loose and sing some karaoke!
+          <a href="https://www.groovymashedpotatoes.com/unique-cultural-experiences/">groovymashedpotatoes.com</a></p>
+          </div>
+    </div>
+  
+        <div class="section2-1">
+          <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/509/original/Newzealand.jpg?1690627505" alt="Newzealand">
+          </div>
+        <div class="culture-image">
+          <span>Visit Hobbiton in New Zealand</span>
+          <p>When Peter Jackson was searching for the perfect movie set location for the village of Hobbiton in The Lord of the Rings, he found it in New Zealand's rolling hillside located on the north island. The moment you step onto the sheep farm called Alexander Farm, it really feels like you've stepped into the movie.
+
+            This specific farm had a remarkable resemblance to how JRR Tolkein described The Shire. The small details crafted into the movie set really allow your imagination to run wild as you think about what real life would have been like in Hobbiton.
+            
+            Many people associate The Lord of the Rings with New Zealand and it has made a big impact on the country's tourism ever since the movies were released in 2001.
+          <a href="https://www.groovymashedpotatoes.com/unique-cultural-experiences/">groovymashedpotatoes.com</a></p>
+        </div>  
+        </div>
+  
+        <div class="section2-1">
+          <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/507/original/kyrgyz.jpg?1690627437" alt="Kyrgyz">
+          </div>
+          <div class="culture-image spec">
+            <span>Stay at a nomadic yurt camp to see how Kyrgyz nomads live</span>
+            <p>The quintessential Kyrgyzstan experience is staying in a nomadic yurt. Up in the alpine around 3,000m you will find shepherd yurt camps where Kyrgyz people live and graze their livestock. The best way to access these places is to do as the Kyrgyz people do and hop on a horse. You will see first hand how this animal plays an essential role in their culture.  
+
+              Our favourite yurt camp was Jyrgal's Yurt Camp in Kel-Suu. Since the area is so remote, we got our own private yurt. At night time you won't believe how bright the stars are. If your guide offers you kumis (fermented horse milk) in a nomadic initiation, make sure to take it on your last day as the toilet might be your next destination.
+            <a href="https://www.groovymashedpotatoes.com/unique-cultural-experiences/">groovymashedpotatoes.com</a></p>
+          </div>
+        </div>
+  </div>
+
+  <hr width="75%">
+
+    <footer>
+      <div>
+        <p>What is your name?</p>
+        <p>Where will you love to visit?</p>
+        <p class="click">Click button below to answer 👇</p>
+        <button>Click here</button>
+        <p class="author">Coded by Jenna Agbor</p>
+      </div>
+    </footer>
+
+  <script>
+  function display(){
+
+      let name =  prompt("What is your name?");
+      let city =  prompt("Where will you love to visit?");
+      let age =  prompt("How old are you?");
+
+      if(age >= 18){
+        alert(`Hello ${name}👋. I hope you get to visit ${city}`);
+  } else {
+        alert(`Hello ${name}👋. You are not yet of age to travel alone 😊. I hope your family takes you to ${city}`);
+  }
+}
+         
+      let element = document.querySelector("button");
+      element.addEventListener("click", display);
+  
+  </script>
+  
+</body>
+</html>
